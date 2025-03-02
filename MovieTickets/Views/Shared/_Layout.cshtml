@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MovieTickets</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    <noscript><link rel="stylesheet" href="~/css/noscript.css" /></noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="/#intro">Welcome</a></li>
+                    <li><a href="/#one">Login Or SignUp </a></li>
+                    <li><a href="/#two">Search</a></li>
+                    <li><a href="/#three">Categories</a></li>
+                    <li><a href="/#four">Cinemas</a></li>
+                    <li><a href="/#five">Favourites</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- Wrapper -->
+    
+        @RenderBody()
+    
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
