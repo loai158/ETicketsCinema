@@ -5,19 +5,18 @@ using MovieTickets.UnitOfWorks;
 namespace MovieTickets.Areas.Addmin.Controllers
 {
     [Area("Addmin")]
-
-    public class ActorController : Controller
+    public class CinemaController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
 
-        public ActorController(IUnitOfWork unitOfWork)
+        public CinemaController(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            var actors = unitOfWork.Actors.Get(includes: [m => m.ActorsMovie]);
-            return View(actors);
+            var cinemas = unitOfWork.Cinemas.Get(includes: [m => m.CinemaMovies]);
+            return View(cinemas);
         }
         [HttpGet]
         public IActionResult Create()
@@ -27,87 +26,85 @@ namespace MovieTickets.Areas.Addmin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Actor model, IFormFile? file, List<int> ActorsMovie)
+        public async Task<IActionResult> Create(Cinema model, IFormFile? file, List<int> CinemaMovies)
         {
             if (file != null && file.Length > 0)
             {
                 // Save img in wwwroot
                 var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\cast", fileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\logos", fileName);
                 using (var stream = System.IO.File.Create(filePath))
                 {
                     file.CopyTo(stream);
                 }
                 // Save img name in db
-                model.ProfilePicture = fileName;
-                model.ActorsMovie = new List<Movie>();
-                foreach (var id in ActorsMovie)
+                model.CinemaLogo = fileName;
+                foreach (var id in CinemaMovies)
                 {
                     var movie = unitOfWork.Movies.GetOne(m => m.Id == id);
-                    model.ActorsMovie.Add(movie);
+                    model.CinemaMovies.Add(movie);
                 }
-                unitOfWork.Actors.Create(model);
-                await unitOfWork.CompleteAsync();
+                unitOfWork.Cinemas.Create(model);
                 await unitOfWork.CompleteAsync();
                 //productRepository.Create(product);
                 //productRepository.Commit();
 
                 return RedirectToAction("Index");
             }
-            ViewData["Actors"] = unitOfWork.Actors.Get().ToList();
+            ViewData["Movies"] = unitOfWork.Movies.Get().ToList();
             return View(model);
         }
         [HttpGet]
-        public IActionResult Edit(int actorId)
+        public IActionResult Edit(int cinemaId)
         {
-            var actor = unitOfWork.Actors.GetOne(m => m.Id == actorId, includes: [ma => ma.ActorsMovie]);
-            if (actor != null)
+            var cinema = unitOfWork.Cinemas.GetOne(c => c.Id == cinemaId, includes: [ma => ma.CinemaMovies]);
+            if (cinema != null)
             {
                 ViewData["Movies"] = unitOfWork.Movies.Get().ToList();
-                return View(actor);
+                return View(cinema);
             }
 
             return RedirectToAction("NotFoundPage", "Home", new { area = "Customer" });
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Actor model, IFormFile? file, List<int> ActorsMovie)
+        public async Task<IActionResult> Edit(Cinema model, IFormFile? file, List<int> CinemaMovies)
         {
-            var modelDb = unitOfWork.Actors.GetOne(m => m.Id == model.Id, tracked: false, includes: [m => m.ActorsMovie]);
+            var modelDb = unitOfWork.Cinemas.GetOne(m => m.Id == model.Id, tracked: false, includes: [m => m.CinemaMovies]);
             if (modelDb != null && file != null && file.Length > 0)
             {
                 var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\cast", fileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\logos", fileName);
                 using (var stream = System.IO.File.Create(filePath))
                 {
                     file.CopyTo(stream);
                 }
                 // Delete old img from wwwroot
-                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\movies", modelDb.ProfilePicture);
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\logos", modelDb.CinemaLogo);
                 if (System.IO.File.Exists(oldPath))
                 {
                     System.IO.File.Delete(oldPath);
                 }
 
                 // Save img name in db
-                model.ProfilePicture = fileName;
+                model.CinemaLogo = fileName;
             }
             else
             {
-                model.ProfilePicture = modelDb.ProfilePicture;
+                model.CinemaLogo = modelDb.CinemaLogo;
             }
             if (model != null)
             {
-                foreach (var item in ActorsMovie)
+                foreach (var item in CinemaMovies)
                 {
                     var movie = unitOfWork.Movies.GetOne(m => m.Id == item);
 
-                    if (movie != null && !modelDb.ActorsMovie.Any(c => c.Id == movie.Id))
+                    if (movie != null && !modelDb.CinemaMovies.Any(c => c.Id == movie.Id))
                     {
-                        model.ActorsMovie.Add(movie);
+                        model.CinemaMovies.Add(movie);
                     }
                 }
-                unitOfWork.Actors.Edit(model);
+                unitOfWork.Cinemas.Edit(model);
                 await unitOfWork.CompleteAsync();
                 return RedirectToAction("Index");
             }
@@ -116,16 +113,16 @@ namespace MovieTickets.Areas.Addmin.Controllers
                 return View(model);
             }
         }
-        public IActionResult Delete(int actorId)
+        public IActionResult Delete(int cinemaId)
         {
-            var actor = unitOfWork.Actors.GetOne(e => e.Id == actorId);
+            var cinema = unitOfWork.Cinemas.GetOne(e => e.Id == cinemaId);
 
-            if (actor != null)
+            if (cinema != null)
             {
                 // Delete old img from wwwroot
-                if (actor.ProfilePicture != null)
+                if (cinema.CinemaLogo != null)
                 {
-                    var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\cast", actor.ProfilePicture);
+                    var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\logos", cinema.CinemaLogo);
                     if (System.IO.File.Exists(oldPath))
                     {
                         System.IO.File.Delete(oldPath);
@@ -133,7 +130,7 @@ namespace MovieTickets.Areas.Addmin.Controllers
                 }
 
                 // Delete img name in db
-                unitOfWork.Actors.Delete(actor);
+                unitOfWork.Cinemas.Delete(cinema);
                 unitOfWork.CompleteAsync();
 
                 return RedirectToAction("Index");
@@ -142,24 +139,24 @@ namespace MovieTickets.Areas.Addmin.Controllers
             return RedirectToAction("NotFoundPage", "Home", new { area = "Customer" });
         }
 
-        public IActionResult DeleteImg(int actorId)
+        public IActionResult DeleteImg(int cinemaId)
         {
-            var actorDb = unitOfWork.Actors.GetOne(e => e.Id == actorId);
+            var cinemaDb = unitOfWork.Cinemas.GetOne(e => e.Id == cinemaId);
 
-            if (actorDb != null)
+            if (cinemaDb != null)
             {
                 // Delete old img from wwwroot
-                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\cast", actorDb.ProfilePicture);
+                var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\logos", cinemaDb.CinemaLogo);
                 if (System.IO.File.Exists(oldPath))
                 {
                     System.IO.File.Delete(oldPath);
                 }
 
                 // Delete img name in db
-                actorDb.ProfilePicture = null;
+                cinemaDb.CinemaLogo = null;
                 unitOfWork.Movies.Commit();
 
-                return RedirectToAction("Edit", new { actorId });
+                return RedirectToAction("Edit", new { cinemaId });
             }
 
             return RedirectToAction("NotFoundPage", "Home", new { area = "customer" });

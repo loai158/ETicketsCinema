@@ -25,5 +25,6 @@
 	<ItemGroup>
 	  <Folder Include="Areas\Identity\Controllers\" />
 	  <Folder Include="Migrations\" />
+	  <Folder Include="wwwroot\images\logos\" />
 	</ItemGroup>
 </Project>
