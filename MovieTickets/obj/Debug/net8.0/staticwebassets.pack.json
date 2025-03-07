@@ -65,14 +65,6 @@
       "PackagePath": "staticwebassets\\images\\aeb18ec7-089a-4e9b-8c04-ab83e51fe8c7.png"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\84c8a2c5-c77d-43e4-b20e-0a3177babf05.jpg",
-      "PackagePath": "staticwebassets\\images\\cast\\84c8a2c5-c77d-43e4-b20e-0a3177babf05.jpg"
-    },
-    {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast1.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast1.png"
-    },
-    {
       "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast2.png",
       "PackagePath": "staticwebassets\\images\\cast\\cast2.png"
     },
@@ -103,10 +95,6 @@
     {
       "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
-    },
-    {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\31575427-97be-4710-88ac-12ed7598b97f.PNG",
-      "PackagePath": "staticwebassets\\images\\logos\\31575427-97be-4710-88ac-12ed7598b97f.PNG"
     },
     {
       "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\0a456038-9c9e-487f-be6d-1a79775b8ae6.jpg",

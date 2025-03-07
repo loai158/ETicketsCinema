@@ -35,12 +35,16 @@
                     <p class="movie-field"><i class="fas fa-list"></i> <strong>Category:</strong> @string.Join(", ", Model.MovieCategories.Select(ca => ca.Name))</p>
                     <p class="movie-field">
                         <i class="fas fa-list"></i> <strong>Actors:</strong>
-                        @foreach (var pic in Model.MovieActors)
+                        @foreach (var pic in Model.MovieActors as List<Actor>)
                         {
                             <div class="actor-card d-flex align-items-center m-2">
-                                <img src="~/images/cast/@pic.ProfilePicture" class="rounded-circle actor-img" alt="@pic.FirstName">
+                                <img src="~/images/cast/@pic.ProfilePicture" class="rounded-circle actor-img" width="50" height="50" alt="@pic.FirstName">
                                 <a href="/Customer/Actor/Details?Id=@pic.Id" class="ms-2" style="color:brown">@pic.FirstName</a>
                             </div>
+                        }
+                        @if (!string.IsNullOrEmpty(Model.TrailerUrl))
+                        {
+                            <iframe width="600" height="200" src="@Model.TrailerUrl" frameborder="0" allowfullscreen class="ms-3"></iframe>
                         }
 
                     </p>

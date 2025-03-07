@@ -13,8 +13,6 @@ wwwroot\images\37795ddc-d091-4263-b786-f1300c45305e.jpg
 wwwroot\images\56e39f6b-8472-47dd-90ff-c2f1227294cd.png
 wwwroot\images\60fc2323-0012-4681-9e65-60d37495a737.png
 wwwroot\images\aeb18ec7-089a-4e9b-8c04-ab83e51fe8c7.png
-wwwroot\images\cast\84c8a2c5-c77d-43e4-b20e-0a3177babf05.jpg
-wwwroot\images\cast\cast1.png
 wwwroot\images\cast\cast2.png
 wwwroot\images\cast\cast3.png
 wwwroot\images\cast\cast4.png
@@ -23,7 +21,6 @@ wwwroot\images\cast\cast6.png
 wwwroot\images\favicon.ico
 wwwroot\images\icon.png
 wwwroot\images\logo.png
-wwwroot\images\logos\31575427-97be-4710-88ac-12ed7598b97f.PNG
 wwwroot\images\movies\0a456038-9c9e-487f-be6d-1a79775b8ae6.jpg
 wwwroot\images\movies\3ccd32f7-b9ea-4169-a7f7-37602e3d4014.png
 wwwroot\images\movies\44925633-337e-4d12-a6ec-f2f55648a3cb.png
