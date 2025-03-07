@@ -6,19 +6,22 @@
 
         public Decimal Price { get; set; }
 
-        public string MovieStatus { get; set; }
+        public string? MovieStatus { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public string ImgUrl { get; set; }
+        public string? ImgUrl { get; set; }
 
         public DateTime StartDate { get; set; }
 
         public DateTime EndDate { get; set; }
 
-        public string TrailerUrl { get; set; }
+        public string? TrailerUrl { get; set; }
+
+        public List<ApplicationUser>? MovieUsers { get; set; }
+
         public List<Actor> MovieActors { get; set; }
         public List<Cinema> MovieCinemas { get; set; }
         public List<Category> MovieCategories { get; set; }

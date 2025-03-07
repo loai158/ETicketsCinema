@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MovieTickets.Models;
+using MovieTickets.ViewModels;
 
 namespace MovieTickets.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -33,7 +35,16 @@ namespace MovieTickets.Data
                 .HasMany(m => m.MovieCategories)
                 .WithMany(c => c.CategoryMovies)
                 .UsingEntity(j => j.ToTable("MovieCategories"));
+
+
+            modelBuilder.Entity<Movie>()
+                .HasMany(m => m.MovieUsers)
+                .WithMany(u => u.UsersMovies)
+                .UsingEntity(j => j.ToTable("MovieUsers"));
         }
+        public DbSet<MovieTickets.ViewModels.RegiserVM> RegiserVM { get; set; } = default!;
+        public DbSet<MovieTickets.ViewModels.LoginVM> LoginVM { get; set; } = default!;
+        public DbSet<MovieTickets.ViewModels.UserProfileVM> UserProfileVM { get; set; } = default!;
 
     }
 }

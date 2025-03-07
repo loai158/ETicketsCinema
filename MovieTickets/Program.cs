@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MovieTickets.Data;
 using MovieTickets.IRepositries;
+using MovieTickets.Models;
 using MovieTickets.Repositries;
 using MovieTickets.UnitOfWorks;
 
@@ -20,6 +22,16 @@ namespace MovieTickets
                 option.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
             });
 
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(
+                options =>
+                {
+                    options.SignIn.RequireConfirmedEmail = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+
+                }).AddEntityFrameworkStores<ApplicationDbContext>()
+                                .AddDefaultTokenProviders();
 
             builder.Services.AddScoped<IMovieRepositry, MovieRepositry>();
             builder.Services.AddScoped<ICinemaRepositry, CinemaRepositry>();
@@ -27,6 +39,8 @@ namespace MovieTickets
             builder.Services.AddScoped<IActorRepositry, ActorRepositry>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+
+            builder.Services.AddAutoMapper(typeof(Program));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

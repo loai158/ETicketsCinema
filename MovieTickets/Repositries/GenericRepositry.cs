@@ -31,6 +31,7 @@ namespace MovieTickets.Repositries
         public void Edit(T entity)
         {
             dbSet.Update(entity);
+            dbContext.SaveChanges();
         }
 
         public void Delete(T entity)
