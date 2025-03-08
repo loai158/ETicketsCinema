@@ -45,44 +45,44 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\221c0808-06c8-4b28-9ea4-55e9414dc897.png",
-      "PackagePath": "staticwebassets\\images\\221c0808-06c8-4b28-9ea4-55e9414dc897.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\angelina_jolie.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\angelina_jolie.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\37795ddc-d091-4263-b786-f1300c45305e.jpg",
-      "PackagePath": "staticwebassets\\images\\37795ddc-d091-4263-b786-f1300c45305e.jpg"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\chris_evans.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\chris_evans.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\56e39f6b-8472-47dd-90ff-c2f1227294cd.png",
-      "PackagePath": "staticwebassets\\images\\56e39f6b-8472-47dd-90ff-c2f1227294cd.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\dwayne_johnson.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\dwayne_johnson.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\60fc2323-0012-4681-9e65-60d37495a737.png",
-      "PackagePath": "staticwebassets\\images\\60fc2323-0012-4681-9e65-60d37495a737.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\emma_stone.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\emma_stone.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\aeb18ec7-089a-4e9b-8c04-ab83e51fe8c7.png",
-      "PackagePath": "staticwebassets\\images\\aeb18ec7-089a-4e9b-8c04-ab83e51fe8c7.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\keanu_reeves.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\keanu_reeves.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast2.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast2.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\leonardo_dicaprio.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\leonardo_dicaprio.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast3.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast3.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\robert_downey.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\robert_downey.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast4.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast4.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\scarlett_johansson.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\scarlett_johansson.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast5.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast5.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\tom_holland.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\tom_holland.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\cast6.png",
-      "PackagePath": "staticwebassets\\images\\cast\\cast6.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\cast\\will_smith.jpg",
+      "PackagePath": "staticwebassets\\images\\cast\\will_smith.jpg"
     },
     {
       "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\favicon.ico",
@@ -97,68 +97,80 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\0a456038-9c9e-487f-be6d-1a79775b8ae6.jpg",
-      "PackagePath": "staticwebassets\\images\\movies\\0a456038-9c9e-487f-be6d-1a79775b8ae6.jpg"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\cinematic_plaza_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\cinematic_plaza_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\3ccd32f7-b9ea-4169-a7f7-37602e3d4014.png",
-      "PackagePath": "staticwebassets\\images\\movies\\3ccd32f7-b9ea-4169-a7f7-37602e3d4014.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\cineplex10_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\cineplex10_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\44925633-337e-4d12-a6ec-f2f55648a3cb.png",
-      "PackagePath": "staticwebassets\\images\\movies\\44925633-337e-4d12-a6ec-f2f55648a3cb.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\download.jpeg",
+      "PackagePath": "staticwebassets\\images\\logos\\download.jpeg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\47d416d6-a751-4ade-baad-15827f8e3465.png",
-      "PackagePath": "staticwebassets\\images\\movies\\47d416d6-a751-4ade-baad-15827f8e3465.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\galaxy_cinema_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\galaxy_cinema_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\4d7239fe-71fd-440d-a302-ac6d8cb5f24e.png",
-      "PackagePath": "staticwebassets\\images\\movies\\4d7239fe-71fd-440d-a302-ac6d8cb5f24e.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\grand_theatre_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\grand_theatre_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\a97d94d7-b2b3-4c5a-859c-ee27655ec5cc.png",
-      "PackagePath": "staticwebassets\\images\\movies\\a97d94d7-b2b3-4c5a-859c-ee27655ec5cc.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\imax_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\imax_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie1.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie1.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\silver_screen_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\silver_screen_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie10.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie10.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\starlight_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\starlight_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie2.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie2.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\logos\\sunset_drivein_logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logos\\sunset_drivein_logo.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie3.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie3.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\dark_knight.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\dark_knight.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie4.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie4.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\endgame.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\endgame.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie5.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie5.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\godfather.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\godfather.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie6.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie6.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\inception.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\inception.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie7.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie7.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\interstellar.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\interstellar.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie8.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie8.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\joker.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\joker.jpg"
     },
     {
-      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\movie9.png",
-      "PackagePath": "staticwebassets\\images\\movies\\movie9.png"
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\matrix.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\matrix.jpg"
+    },
+    {
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\shutter_island.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\shutter_island.jpg"
+    },
+    {
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\spiderman_nwh.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\spiderman_nwh.jpg"
+    },
+    {
+      "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\images\\movies\\titanic.jpg",
+      "PackagePath": "staticwebassets\\images\\movies\\titanic.jpg"
     },
     {
       "Id": "D:\\.net\\projects\\MovieTickets\\MovieTickets\\wwwroot\\js\\breakpoints.min.js",

@@ -6,8 +6,6 @@
 
         public Decimal Price { get; set; }
 
-        public string? MovieStatus { get; set; }
-
         public string? Name { get; set; }
 
         public string? Description { get; set; }

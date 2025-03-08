@@ -25,6 +25,8 @@
 	<ItemGroup>
 	  <Folder Include="Areas\Identity\Controllers\" />
 	  <Folder Include="Migrations\" />
+	  <Folder Include="wwwroot\images\cast\" />
 	  <Folder Include="wwwroot\images\logos\" />
+	  <Folder Include="wwwroot\images\movies\" />
 	</ItemGroup>
 </Project>
